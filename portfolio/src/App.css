@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #222222;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 10%;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222222;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #555555;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+.about {
+  padding: 130px 10%;
+  min-height: 550px;
+}
+
+.subtitle {
+  color: #888888;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.about h1 {
+  font-size: 55px;
+  line-height: 1.2;
+  margin: 25px 0;
+}
+
+.about-text {
+  color: #777777;
+  max-width: 450px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.main-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 25px;
+  background-color: #222222;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.main-button:hover {
+  background-color: #555555;
+}
+
+.section {
+  padding: 80px 10%;
+}
+
+.section h2 {
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill {
+  padding: 15px 30px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  color: #555555;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  padding: 25px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.project span {
+  color: #999999;
+  font-size: 13px;
+}
+
+.project h3 {
+  font-size: 21px;
+}
+
+.project p {
+  color: #888888;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 60px 10%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer h2 {
+  font-size: 30px;
+}
+
+.footer p {
+  color: #888888;
+}
+
+.footer a {
+  color: #222222;
+}
+
+.copyright {
+  margin-top: 50px;
+  font-size: 12px;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  .about {
+    padding: 90px 7%;
+  }
+
+  .about h1 {
+    font-size: 38px;
+  }
+
+  .section {
+    padding: 60px 7%;
+  }
+}
